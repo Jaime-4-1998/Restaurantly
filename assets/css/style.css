@@ -34,7 +34,7 @@ h6 {
     bottom: 0;
     z-index: 9999;
     overflow: hidden;
-    background: #1a1814;
+    background: #d2dddf;;
 }
 
 #preloader:before {
@@ -43,8 +43,8 @@ h6 {
     top: calc(50% - 30px);
     left: calc(50% - 30px);
     border: 6px solid #1a1814;
-    border-top-color: #cda45e;
-    border-bottom-color: #cda45e;
+    border-top-color: #00639d;
+    border-bottom-color: #00639d;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -178,6 +178,7 @@ h6 {
     -o-border-radius:5px ;
 }
 #header .logo {
+    
     font-size: 98px;
     margin: 0;
     padding: 0;
@@ -186,15 +187,19 @@ h6 {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
+    width: 20%;
 }
+#header.header-scrolled .logo{
+    border-radius:5px ;
+    background-color: rgba(0, 0, 0, 0.6);
+    -webkit-border-radius:5px ;
+    -moz-border-radius:5px ;
+    -ms-border-radius:5px ;
+    -o-border-radius:5px ;
+} 
 
-#header .logo a {
-    color: #fff;
-}
 
-#header .logo img {
-width: 40%;
-}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
