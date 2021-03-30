@@ -18,6 +18,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-display: swap;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -170,7 +171,8 @@ h6 {
     font-weight: bold;
     color: white;
     border-radius:5px ;
-    
+    font-display: swap;
+    font-family: 'Ubuntu', sans-serif;
     background-color: rgba(0, 0, 0, 0.6);
     -webkit-border-radius:5px ;
     -moz-border-radius:5px ;
@@ -186,7 +188,8 @@ h6 {
     font-weight: 300;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    font-display: swap;
+    font-family: 'Ubuntu', sans-serif;
     width: 20%;
 }
 #header.header-scrolled .logo{
@@ -231,7 +234,6 @@ h6 {
     color: white;
     transition: 0.3s;
     font-size: 14px;
-    font-family: "Open Sans", sans-serif;
 }
 
 .nav-menu a:hover,
@@ -510,7 +512,51 @@ h6 {
 #hero .container {
     padding-top: 110px;
 }
+/* ARROWS */
 
+.arrowText {
+    margin-left: -30px;
+    position: relative;
+    width: 70%;
+    height: 40%;
+    background: white;
+    border-radius: 5% 6.200% 5% 6.200%;
+    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+    float: left;
+    z-index: 90;
+}
+
+.arrowText:before,
+.arrowText:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+
+/* RIGHT ARROW */
+
+.arrowRight:before,
+.arrowRight:after {
+    margin-top: -40%;
+    border-top: 112px solid transparent;
+    border-bottom: 102px solid transparent;
+    top: 70%;
+}
+
+.arrowRight:after {
+    border-left: 100px solid white;
+    right: -95px;
+    z-index: 2;
+}
+
+.arrowRight:before {
+    right: -90px;
+    z-index: 1;
+}
 .espacio-carru {
     height: 10px;
 }
@@ -799,51 +845,7 @@ h6 {
     height: 50px;
 }
 
-/* ARROWS */
 
-.arrowText {
-    margin-left: -30px;
-    position: relative;
-    width: 70%;
-    height: 40%;
-    background: white;
-    border-radius: 5% 6.200% 5% 6.200%;
-    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
-    float: left;
-    z-index: 90;
-}
-
-.arrowText:before,
-.arrowText:after {
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
-}
-
-
-/* RIGHT ARROW */
-
-.arrowRight:before,
-.arrowRight:after {
-    margin-top: -40%;
-    border-top: 110px solid transparent;
-    border-bottom: 92px solid transparent;
-    top: 74%;
-}
-
-.arrowRight:after {
-    border-left: 100px solid white;
-    right: -95px;
-    z-index: 2;
-}
-
-.arrowRight:before {
-    right: -90px;
-    z-index: 1;
-}
 .imagen-1,
 img {
     display: block;
@@ -1189,8 +1191,12 @@ img {
         -o-transition: 0.3s;
         transition: 0.3s;
     }
+    .arrowRight::before, .arrowRight::after {
+        margin-top: -28%;
+        border-top: 99px solid transparent;
+        border-bottom: 93px solid transparent;
+        top: 70%;
     }
-    
     .fondo {
         background-color: #d2dddf;
         display: block;
@@ -1198,15 +1204,9 @@ img {
         width: 100%;
         height: 50%;
     }
-    
-    .arrowRight:before,
-    .arrowRight:after {
-        margin-top: -28%;
-        border-top: 112px solid transparent;
-        border-bottom: 80px solid transparent;
-        top: 70%;
-    }
 }
+    
+
 @media(max-width:600px) {
   
     #topbar .contact-info {
@@ -1271,7 +1271,7 @@ img {
         display: block;
         position: relative;
         width: 100%;
-        height: 130vh;
+        height: 100%;
     }
     
     
@@ -1297,7 +1297,7 @@ img {
         display: block;
         position: relative;
         width: 100%;
-        height: 160vh;
+        height: 100%;
     }
     
    
@@ -1319,11 +1319,11 @@ img {
     }
     
     .fondo {
-        background-color: #d2dddf;
+        background-color: red;
         display: block;
         position: relative;
         width: 100%;
-        height: 180vh;
+        height: 100%;
         
     }
     
