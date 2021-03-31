@@ -3,24 +3,6 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-a {
-    color: #cda45e;
-}
-
-a:hover {
-    color: #d9ba85;
-    text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Ubuntu', sans-serif;
-}
-
 
 /*--------------------------------------------------------------
 # Preloader
@@ -43,7 +25,7 @@ h6 {
     position: fixed;
     top: calc(50% - 30px);
     left: calc(50% - 30px);
-    border: 6px solid #1a1814;
+    border: 6px solid white;
     border-top-color: #00639d;
     border-bottom-color: #00639d;
     border-radius: 50%;
@@ -103,22 +85,6 @@ h6 {
     color: white;
 }
 
-
-/*--------------------------------------------------------------
-# Disable aos animation delay on mobile devices
---------------------------------------------------------------*/
-
-@media screen and (max-width: 768px) {
-    [data-aos-delay] {
-        transition-delay: 0 !important;
-    }
-}
-
-
-/*--------------------------------------------------------------
-# Top Bar
---------------------------------------------------------------*/
-
 #topbar {
     border-bottom: 1px solid white;
     height: 40px;
@@ -131,13 +97,20 @@ h6 {
 }
 
 #topbar .contact-info {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 13px;
+    padding: 5px 0 0 0;
     color: white;
-    margin-left: 740px;
+    margin-left: 720px;
 }
 
 #topbar .contact-info a {
     color: white;
     padding-right: 10px;
+}
+
+#topbar .contact-info a:hover {
+    text-decoration: none;
 }
 
 #topbar .contact-info i {
@@ -148,11 +121,6 @@ h6 {
 #topbar .contact-info i+i {
     margin-left: 5px;
 }
-
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
 
 #header {
     background: transparent;
@@ -169,11 +137,10 @@ h6 {
 
 #header.header-scrolled a {
     font-weight: bold;
-    color: white;
+    color: black;
     border-radius: 5px;
     font-display: swap;
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgba(0, 0, 0, 0.6);
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
@@ -202,14 +169,6 @@ h6 {
     -o-border-radius: 5px;
 }
 
-
-/*--------------------------------------------------------------
-# Navigation Menu
---------------------------------------------------------------*/
-
-
-/* Desktop Navigation */
-
 .nav-menu ul {
     margin: 0;
     padding: 0;
@@ -224,7 +183,7 @@ h6 {
 .nav-menu>ul>li {
     position: relative;
     white-space: nowrap;
-    padding-left: 28px;
+    padding-left: 2px;
 }
 
 .nav-menu a {
@@ -490,7 +449,7 @@ h6 {
 }
 
 
-/* ARROWS */
+/*END OF MEN*/
 
 .carousel-control-prev {
     font-size: 40px;
@@ -500,48 +459,29 @@ h6 {
     font-size: 40px;
 }
 
-.arrowText {
-    margin-left: -30px;
-    position: relative;
-    width: 70%;
-    height: 40%;
-    background: white;
-    border-radius: 5% 6.200% 5% 6.200%;
-    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
-    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
-    float: left;
-    z-index: 90;
+.nav-item a {
+    font-display: swap;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    padding: 30px;
 }
 
-.arrowText:before,
-.arrowText:after {
-    content: " ";
-    position: absolute;
-    display: block;
-    width: 0;
-    height: 0;
+.nav-item a:hover {
+    color: white;
 }
 
-
-/* RIGHT ARROW */
-
-.arrowRight:before,
-.arrowRight:after {
-    margin-top: -40%;
-    border-top: 112px solid transparent;
-    border-bottom: 102px solid transparent;
-    top: 70%;
+.nav-link a {
+    font-size: 13px;
+    color: white;
 }
 
-.arrowRight:after {
-    border-left: 100px solid white;
-    right: -95px;
-    z-index: 2;
-}
-
-.arrowRight:before {
-    right: -90px;
-    z-index: 1;
+.navbar-brand a {
+    font-display: swap;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    padding: 30px;
 }
 
 .espacio-carru {
@@ -716,17 +656,12 @@ h6 {
     color: white;
 }
 
-@media (max-width: 992px) {
-    #hero .container {
-        padding-top: 98px;
-    }
-}
-
 .fondo {
     background-color: #d2dddf;
     display: block;
     position: relative;
     width: 100%;
+    height: 750px;
 }
 
 .fondo-img {
@@ -754,7 +689,6 @@ h6 {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
     padding: -90px;
-    color: black;
 }
 
 .espacio-fondo-gris {
@@ -823,6 +757,82 @@ h6 {
 
 .espacio-listo {
     height: 50px;
+}
+
+
+/* ARROWS */
+
+.arrowText {
+    margin-left: -30px;
+    position: relative;
+    width: 70%;
+    height: 40%;
+    background: white;
+    border-radius: 5% 6.200% 5% 6.200%;
+    -webkit-box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+    float: left;
+    z-index: 90;
+}
+
+.arrowText:before,
+.arrowText:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+}
+
+
+/* RIGHT ARROW */
+
+.arrowRight:before,
+.arrowRight:after {
+    margin-top: -40%;
+    border-top: 110px solid transparent;
+    border-bottom: 92px solid transparent;
+    top: 74%;
+}
+
+.arrowRight:after {
+    border-left: 100px solid white;
+    right: -95px;
+    z-index: 2;
+}
+
+.arrowRight:before {
+    right: -90px;
+    z-index: 1;
+}
+
+.ver-2 a {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-display: swap;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.ver-2 a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.ver-3 a {
+    margin-left: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-display: swap;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+.ver-3 a:hover {
+    text-decoration: none;
+    color: black;
 }
 
 .imagen-1,
@@ -993,73 +1003,133 @@ img {
     background: yellowgreen;
 }
 
-@media (min-width: 1024px) {
-    #hero {
-        background-attachment: fixed;
+@media(max-width:991px) {
+    .fondo {
+        background-color: #d2dddf;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 1280px;
+    }
+    .arrowRight:before,
+    .arrowRight:after {
+        margin-top: -29%;
+        border-top: 97px solid transparent;
+        border-bottom: 92px solid transparent;
+        top: 74%;
+    }
+    .portfolio .portfolio-item {
+        margin-bottom: 30px;
+        margin-left: 0%;
     }
 }
 
-@media (max-width: 1199px) {
-    #topbar .contact-info {
-        color: white;
-        margin-left: 550px;
+@media(max-width:950px) {
+    .fondo {
+        background-color: #d2dddf;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 1280px;
+    }
+    .arrowRight:before,
+    .arrowRight:after {
+        margin-top: -29%;
+        border-top: 97px solid transparent;
+        border-bottom: 92px solid transparent;
+        top: 74%;
+    }
+    .portfolio .portfolio-item {
+        margin-bottom: 30px;
+        margin-left: 0%;
     }
 }
 
-@media (max-width: 992px) {
-    #topbar .contact-info {
-        color: white;
-        margin-left: 440px;
+@media(max-width:920px) {
+    .fondo {
+        background-color: #d2dddf;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 1280px;
+    }
+    .arrowRight:before,
+    .arrowRight:after {
+        margin-top: -29%;
+        border-top: 97px solid transparent;
+        border-bottom: 92px solid transparent;
+        top: 74%;
+    }
+    .portfolio .portfolio-item {
+        margin-bottom: 30px;
+        margin-left: 0%;
     }
 }
 
-@media (max-width: 768px) {
-    .carousel-control-prev {
-        display: none;
+@media(max-width:890px) {
+    .uno {
+        margin-top: -15.2%;
     }
-    .carousel-control-next {
-        display: none;
+    .nav-item a {
+        padding: 55px;
     }
-    #header .logo img {
-        display: none;
+    .fondo {
+        background-color: #d2dddf;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 1280px;
     }
-    #topbar {
-        border-bottom: none;
-        height: 0px;
-        font-size: 14px;
-        transition: all 0.5s;
+    .arrowRight:before,
+    .arrowRight:after {
+        margin-top: -29%;
+        border-top: 97px solid transparent;
+        border-bottom: 92px solid transparent;
+        top: 74%;
     }
-    #topbar .contact-info {
-        color: white;
-        margin-left: 250px;
+    .portfolio .portfolio-item {
+        margin-bottom: 30px;
+        margin-left: 0%;
     }
-    #header.header-scrolled {
-        top: 0;
-        background: transparent;
-        border-bottom: none;
+}
+
+@media(max-width: 768px) {
+    .espacio-carru {
+        height: 10px;
     }
     .cont {
         margin-left: -66%;
-        margin-top: -5%;
+        margin-top: -35%;
         font-display: swap;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 100;
         color: white;
-        font-size: 17px;
     }
     .linea {
-        display: none;
+        border-bottom: solid 1px red;
+        width: 10%;
+        margin-left: -3.5%;
     }
     .inte {
-        display: none;
+        margin-left: -4%;
+        text-align: left;
+        font-display: swap;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        color: white;
     }
     .solu {
-        display: none;
+        margin-left: -3.5%;
+        font-display: swap;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 300;
+        color: black;
+        text-align: justify;
     }
     .ver a {
         font-size: 12px;
         text-transform: uppercase;
-        margin-left: -80%;
+        margin-left: -96%;
         font-display: swap;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 300;
@@ -1072,42 +1142,53 @@ img {
         text-decoration: none;
         color: white;
     }
-    .espa-resp {
-        padding: 200px 0 0 0;
-    }
     .combu {
         text-align: left;
         margin-left: 60%;
-        margin-top: 0%;
+        margin-top: -23%;
         font-display: swap;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 100;
         color: white;
-        font-size: 11px;
+        font-size: 20px;
     }
     .linea-1 {
-        display: none;
+        border-bottom: solid 1px red;
+        width: 10%;
+        margin-left: 60%;
     }
     .flot {
-        display: none;
+        font-display: swap;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        color: white;
+        text-align: justify;
+        margin-left: 60%;
+        font-size: 13px;
     }
     .llantas {
-        padding: 20px 0 0 0;
         margin-right: 65%;
-        margin-top: -20%;
+        margin-top: -33%;
         font-display: swap;
         font-family: 'Ubuntu', sans-serif;
         text-transform: uppercase;
         color: white;
         text-align: right;
         font-weight: 100;
-        font-size: 12px;
+        font-size: 18px;
     }
     .linea-2 {
-        display: none;
+        border-bottom: solid 1px red;
+        width: 10%;
+        margin-left: 25%;
     }
     .conf {
-        display: none;
+        margin-right: 65%;
+        font-display: swap;
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        text-align: right;
+        font-size: 13px;
     }
     .ver-1 a {
         font-size: 12px;
@@ -1126,6 +1207,7 @@ img {
         color: white;
     }
     .combu-1 {
+        font-size: 25px;
         text-align: left;
         margin-left: 65%;
         margin-top: -39%;
@@ -1133,13 +1215,21 @@ img {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 100;
         color: white;
-        font-size: 14px;
+        font-size: 18px;
     }
     .linea-3 {
-        display: none;
+        border-bottom: solid 1px red;
+        width: 10%;
+        margin-left: 65%;
     }
     .flot-1 {
-        display: none;
+        font-display: swap;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 400;
+        color: white;
+        text-align: justify;
+        margin-left: 65%;
+        font-size: 13px;
     }
     .portfolio .portfolio-wrap img {
         display: block;
@@ -1155,12 +1245,11 @@ img {
         -o-transition: 0.3s;
         transition: 0.3s;
     }
-    .arrowRight::before,
-    .arrowRight::after {
-        margin-top: -28%;
-        border-top: 99px solid transparent;
-        border-bottom: 93px solid transparent;
-        top: 70%;
+    .barra img {
+        display: block;
+        position: absolute;
+        margin-top: -5%;
+        width: 20%
     }
     .fondo {
         background-color: #d2dddf;
@@ -1169,124 +1258,37 @@ img {
         width: 100%;
         height: 50%;
     }
+    .arrowRight:before,
+    .arrowRight:after {
+        margin-top: -28%;
+        border-top: 112px solid transparent;
+        border-bottom: 80px solid transparent;
+        top: 70%;
+    }
+    .espacio-resp-foot {
+        height: 50px;
+    }
 }
 
 @media(max-width:600px) {
-    #topbar .contact-info {
-        color: white;
-        margin-left: 150px;
-    }
-    .arrowRight:before,
-    .arrowRight:after {
-        margin-top: -70%;
-        border-top: 122px solid transparent;
-        border-bottom: 122px solid transparent;
-        top: 70%;
-    }
-}
-
-@media (max-height: 500px) {
-    #hero {
-        height: auto;
-    }
-}
-
-@media(max-width:500px) {
-    #topbar .contact-info {
-        color: white;
-        margin-left: 90px !important;
-    }
-    #header.header-scrolled {
-        top: 0;
-        background: transparent;
-        border-bottom: none;
-    }
-    .carousel-indicators li {
-        font-size: 15px;
-    }
-    /* RIGHT ARROW */
-    .arrowRight:before,
-    .arrowRight:after {
-        margin-top: -38%;
-        border-top: 100px solid transparent;
-        border-bottom: 100px solid transparent;
-        top: 70%;
-    }
-    .arrowRight:after {
-        border-left: 96px solid white;
-        right: -95px;
-        z-index: 2;
-    }
-    .arrowRight:before {
-        right: -90px;
-        z-index: 1;
-    }
-}
-
-@media(max-width:420px) {
-    #header.header-scrolled {
-        top: 0;
-        background: transparent;
-        border-bottom: none;
-    }
-    .arrowRight:before,
-    .arrowRight:after {
-        margin-top: -61%;
-        border-top: 117px solid transparent;
-        border-bottom: 117px solid transparent;
-        top: 70%;
+    .espacio-link-3 {
+        height: 50px;
     }
     .fondo {
         background-color: #d2dddf;
         display: block;
         position: relative;
         width: 100%;
-        height: 100%;
-    }
-}
-
-@media(max-width:380px) {
-    #header.header-scrolled {
-        top: 0;
-        background: transparent;
-        border-bottom: none;
-    }
-    .arrowRight:before,
-    .arrowRight:after {
-        margin-top: -61%;
-        border-top: 117px solid transparent;
-        border-bottom: 127px solid transparent;
-        top: 60%;
-    }
-    .fondo {
-        background-color: #d2dddf;
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-@media(max-width:360px) {
-    #header .logo {
-        display: none;
-    }
-    #header.header-scrolled .logo {
-        display: none;
-    }
-    #header.header-scrolled {
-        top: 0;
-        background: transparent;
-        border-bottom: none;
+        height: 58%;
     }
     .cont {
-        margin-left: -66%;
-        top: 60%;
+        font-size: 16px;
+        margin-left: -73%;
+        margin-top: 22%;
         font-display: swap;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 100;
-        color: red;
-        font-size: 17px;
+        color: white;
     }
     .linea {
         display: none;
@@ -1305,14 +1307,113 @@ img {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 300;
         color: black;
-        -webkit-transition: 0.3s ease;
-        -o-transition: 0.3s ease;
-        transition: 0.3s ease;
     }
-    .ver a:hover {
-        text-decoration: none;
+    .espacio-carru {
+        height: 3px;
+    }
+    .combu {
+        margin-top: -13%;
+        font-size: 16px;
+    }
+    .linea-1 {
+        display: none;
+    }
+    .flot {
+        display: none;
+    }
+    .llantas {
+        text-transform: none;
+        margin-top: -13%;
+        font-size: 13px;
+    }
+    .linea-2 {
+        display: none;
+    }
+    .conf {
+        display: none;
+    }
+    .but-1 {
+        font-size: 10px;
+        margin-right: 62%;
+        font-display: swap;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 100;
+        background: white;
+        border: 0;
+        padding: 10px 12px;
+        color: black;
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+    }
+    .combu-1 {
+        margin-top: -23%;
+        font-size: 13px;
+    }
+    .linea-3 {
+        display: none;
+    }
+    .flot-1 {
+        display: none;
+    }
+    .arrowRight:before,
+    .arrowRight:after {
+        margin-top: -70%;
+        border-top: 122px solid transparent;
+        border-bottom: 122px solid transparent;
+        top: 70%;
+    }
+    .espacio-link-1 {
+        height: 10px;
+    }
+    .mapa {
+        font-display: swap;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 100;
+        left: 0%;
+        font-size: 18px;
         color: white;
+        text-align: left;
+        position: absolute;
+        margin-top: -8%;
     }
+}
+
+@media(max-width:420px) {
+    .arrowRight:before,
+    .arrowRight:after {
+        margin-top: -61%;
+        border-top: 117px solid transparent;
+        border-bottom: 117px solid transparent;
+        top: 70%;
+    }
+    .fondo {
+        background-color: #d2dddf;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width:380px) {
+    .arrowRight:before,
+    .arrowRight:after {
+        margin-top: -61%;
+        border-top: 117px solid transparent;
+        border-bottom: 127px solid transparent;
+        top: 60%;
+    }
+    .fondo {
+        background-color: #d2dddf;
+        display: block;
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-width:360px) {
     .arrowRight:before,
     .arrowRight:after {
         margin-top: -65%;
@@ -1321,32 +1422,10 @@ img {
         top: 60%;
     }
     .fondo {
-        background-color: red;
+        background-color: #d2dddf;
         display: block;
         position: relative;
         width: 100%;
-        height: 100%;
-    }
-}
-
-@-webkit-keyframes pulsate-btn {
-    0% {
-        transform: scale(0.6, 0.6);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1, 1);
-        opacity: 0;
-    }
-}
-
-@keyframes pulsate-btn {
-    0% {
-        transform: scale(0.6, 0.6);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(1, 1);
-        opacity: 0;
+        height: auto;
     }
 }
